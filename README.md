@@ -1,13 +1,13 @@
 # Virtual Wallet - A RESTful API Backend
 
-This project creates a RESTful API backend using Java, Spring Framework, Hibernate, Maven and H2 (In-memory store) datebase, which is able to provide service for a virtual wallet to track users transaction account.
+This project creates a RESTful API backend using Java, Spring Framework, Hibernate, Maven and H2 (In-memory store) database, which provides service for a virtual wallet to track users transaction account.
 
 
 # How to Run
 
 1. Clone this repository via `git clone https://github.com/Ziruliu/virtual-wallet-backend.git`.
 
-2. Run `mvn clean package` on the commond line to download all the maven depencies and build the excutable jar file.
+2. Run `mvn clean package` on the command line to download all the maven dependencies and build the executable jar file.
 
 3. Run `java -jar target/virtual-wallet-backend-0.0.1-SNAPSHOT.jar` to start the application.
 
@@ -16,7 +16,7 @@ This project creates a RESTful API backend using Java, Spring Framework, Hiberna
 
 # About the Service
 
-Following public end points are provided by the Wallet Service:
+Following public endpoints are provided by the Wallet Service:
 
 ### Create a new wallet for a user
 ```
@@ -26,7 +26,7 @@ GET /user/wallet
     "response": "Wallet successfully created!"
 }
 ```
-Each user can only have single wallet, calling the end point again will result in the following response:
+Each user can only have a single wallet, calling the endpoint again will result in the following response:
 ```
 {
     "status": 400,
@@ -36,7 +36,7 @@ Each user can only have single wallet, calling the end point again will result i
 ```
 
 ### Return current account balance
-Initial account balance is 0.
+The initial account balance is 0.
 ```
 GET /user/balance
 
